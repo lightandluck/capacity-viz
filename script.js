@@ -8,6 +8,7 @@
 
 let names = '';
 const elements = document.querySelectorAll('[class*="capacity"]');
+const available = document.getElementById('available');
 
 Array.from(elements).forEach(element => {
   element.addEventListener('mouseover', showNames, false);
@@ -16,10 +17,12 @@ Array.from(elements).forEach(element => {
 
 function showNames (event) {
   console.log(event.target.dataset.name);
+  available.innerHTML = event.target.dataset.name;
+
 }
 
 function removeNames (event) {
-
+  available.innerHTML = '';
 }
 
 function toggle(event) {
