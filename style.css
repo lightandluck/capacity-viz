@@ -28,23 +28,84 @@ button {
 html, body {
   margin: 0;
   background-color: #eee;
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
-.chart {
+main {
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-  grid-row-gap: 5px;
-  height: 100vh;
+  grid-template-rows: repeat(19, 1fr);
+  grid-template-columns: repeat(25, 1fr);
   width: 70vw;
-  padding: 5px 10px;
 }
 
-[class*="bar"] {
-  border-radius: 5px 5px 0 0;
-  background-color: #ff4136;
-  grid-column-start: 1;
-  grid-column-end: 7;
+.project-title {
+  padding: 0 20px;
+}
+.month, .project-title {
+  text-align: center;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.april {
+  grid-column: 2 / 6;
+}
+.may {
+  grid-column: 6 / 10;
+}
+.june {
+  grid-column: 10 / 14;
+}
+.july {
+  grid-column: 14 / 18;
+}
+.august {
+  grid-column: 18 / 22;
+}
+.september {
+  grid-column: 22 / 26;
+}
+
+.project-name {
+  grid-column: 1 / 2;
+}
+
+[class*="capacity"] {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  text-align: center;
+}
+
+[class*="capacity-lead"] {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+[class*="capacity-discussion"] {
+  background-color: blue;
+}
+
+[class*="capacity-updated"] {
+  background-color: yellow
+}
+
+[class*="capacity-lead-walk"] {
+  grid-row: 2 / 3;
+}
+
+.capacity-lead-walk-1 {
+  grid-column: 2/16;
+}
+
+.capacity-lead-walk-2 {
+  grid-column: 20/26;
+}
+
+.status {
+  margin-left: 20px;
+}
+
+td {
+  border: 1px solid black;
 }

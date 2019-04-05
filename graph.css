@@ -1,0 +1,57 @@
+.graph {
+  display: grid;
+  grid:  repeat(10, auto) max-content / max-content repeat(5, auto);
+  width: 98vw;
+	max-width: 600px;
+	height: 420px;
+	margin: 60px auto auto auto;
+}
+
+.graphBar{
+  height: var(--h);
+  grid-row: 1 / -2;
+  background: gold;
+  width: 45px;
+  justify-self: center;
+}
+
+.graphBar:nth-of-type(1) {
+  grid-column: 2;
+  grid-row-start: 1;
+  --h: 10%;
+}
+.graphBar:nth-of-type(2) {
+  grid-column: 3;
+  --h: 65%;
+  grid-row-start: 6;
+}
+.graphBar:nth-of-type(3) {
+  grid-column: 4;
+  --h: 52%;
+}
+.graphBar:nth-of-type(4) {
+	grid-column: 5;
+	--h: 100%;
+}
+.graphBar:nth-of-type(5) {
+	grid-column: 6;
+	--h: 92%;
+}
+
+/* graph  labels */
+.graphRowLabel {
+	margin-top: -0.5em;
+}
+.graphColumnLabel {
+	justify-self: center;
+	margin-top: 6px;
+	text-shadow: 0 0 2px palegoldenrod;
+	font-size: 14pt;
+}
+.graphRowLabel::after {
+	display: inline-block;
+	content: "\2000\2000\2014";
+}
+.graphRowLabel:nth-of-type(1)::after {
+	content: "\2000\2014";
+}
