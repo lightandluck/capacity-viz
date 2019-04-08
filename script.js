@@ -9,6 +9,7 @@
 let names = '';
 const elements = document.querySelectorAll('[class*="capacity"]');
 const available = document.getElementById('available');
+const unavailable = document.getElementById('unavailable');
 
 Array.from(elements).forEach(element => {
   element.addEventListener('mouseover', showNames, false);
@@ -16,13 +17,13 @@ Array.from(elements).forEach(element => {
 })
 
 function showNames (event) {
-  console.log(event.target.dataset.name);
-  available.innerHTML = event.target.dataset.name;
-
+  available.innerHTML = event.target.dataset.available || '';
+  unavailable.innerHTML = event.target.dataset.unavailable || '';
 }
 
 function removeNames (event) {
   available.innerHTML = '';
+  unavailable.innerHTML = '';
 }
 
 function toggle(event) {

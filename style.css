@@ -68,30 +68,39 @@ main {
   grid-column: 22 / 26;
 }
 
-.project-name {
+.project-name-walk {
   grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  text-align: center;
 }
 
 [class*="capacity"] {
   grid-column-start: 2;
   grid-column-end: -1;
-  text-align: center;
 }
 
 [class*="capacity-lead"] {
-  background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(23, 124, 23, 0.644);
 }
 
 [class*="capacity-discussion"] {
-  background-color: blue;
+  background-color: rgba(59, 112, 224, 0.644);;
 }
 
 [class*="capacity-updated"] {
-  background-color: yellow
+  background-color: rgba(255, 255, 0, 0.644);
 }
 
 [class*="capacity-lead-walk"] {
   grid-row: 2 / 3;
+}
+
+[class*="capacity-discussion-walk"] {
+  grid-row: 3 / 4;
+}
+
+[class*="capacity-updated-walk"] {
+  grid-row: 4 / 5;
 }
 
 .capacity-lead-walk-1 {
@@ -100,6 +109,40 @@ main {
 
 .capacity-lead-walk-2 {
   grid-column: 20/26;
+}
+
+.capacity-discussion-walk-1 {
+  grid-column: 2/15;
+}
+
+.capacity-discussion-walk-2 {
+  grid-column: 16/-1;
+}
+
+.capacity-discussion-walk-3 {
+  grid-column: 20/26;
+}
+
+.capacity-discussion-walk-4 { 
+  grid-column: 2/15;
+}
+
+.capacity-discussion-walk-5 { 
+  grid-column: 15/16;
+}
+
+.capacity-updated-walk-1 { 
+  grid-column: 2/10;
+}
+
+.capacity-updated-walk-2 { 
+  grid-column: 15/-1;
+}
+
+.capacity-updated-walk-3 {
+  grid-column: 10/15;
+  border: 1px dotted black;
+  background-color: transparent;
 }
 
 .status {
