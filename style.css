@@ -170,7 +170,7 @@ main {
 .capacity-updated-walk-3 {
   grid-column: 10/15;
   border: 1px dotted black;
-  background-color: red;
+  background-color: rgb(184, 53, 53);
 }
 
 /* -------------------------------- */
@@ -246,7 +246,7 @@ main {
 .capacity-lead-edj-2 {
   grid-column: 16/20;
   border: 1px dotted black;
-  background-color: red;
+  background-color: rgb(184, 53, 53);
 }
 
 .capacity-lead-edj-3 {
@@ -276,7 +276,7 @@ main {
 .capacity-updated-edj-2 {
   grid-column: 14/15;
   border: 1px dotted black;
-  background-color: red
+  background-color: rgb(184, 53, 53);
 }
 
 .capacity-updated-edj-3 {
