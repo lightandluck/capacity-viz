@@ -167,6 +167,10 @@ main {
   grid-row: 5/6;
 }
 
+[class*="capacity-discussion-dt"] {
+  grid-row: 6/7;
+}
+
 .capacity-lead-dt-1 { 
   grid-column: 2/10;
 }
@@ -188,6 +192,26 @@ main {
   background-color: #318931;
 }
 
+.capacity-discussion-dt-2 { 
+  grid-column: 2/14;
+}
+
+.capacity-discussion-dt-3 { 
+  grid-column: 16/-1;
+}
+
+.capacity-discussion-dt-4 { 
+  grid-column: 2/14;
+}
+
+.capacity-discussion-dt-5 { 
+  grid-column: 20/-1;
+}
+
+.capacity-discussion-dt-6 { 
+  grid-column: 15/16;
+  background-color: #4376e0;
+}
 
 .status {
   margin-left: 20px;
