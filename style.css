@@ -35,12 +35,15 @@ html, body {
 
 main {
   display: grid;
-  grid-template-rows: repeat(19, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(25, 1fr);
   width: 70vw;
   grid-template-areas: "titles duration"
     "walk walk-l" "walk walk-d" "walk walk-u"
-    "dt dt-l" "dt dt-d";
+    ". ."
+    "dt dt-l" "dt dt-d"
+    ". ."
+    "edj edj-l" "edj edj-d" "edj edj-u";
 }
 
 .project-title {
@@ -81,6 +84,15 @@ main {
 
 .project-name-dt {
   grid-area: dt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.project-name-edj {
+  grid-area: edj;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,17 +170,17 @@ main {
 .capacity-updated-walk-3 {
   grid-column: 10/15;
   border: 1px dotted black;
-  background-color: transparent;
+  background-color: red;
 }
 
 /* -------------------------------- */
 
 [class*="capacity-lead-dt"] {
-  grid-row: 5/6;
+  grid-row: 6/7;
 }
 
 [class*="capacity-discussion-dt"] {
-  grid-row: 6/7;
+  grid-row: 7/8;
 }
 
 .capacity-lead-dt-1 { 
@@ -212,6 +224,65 @@ main {
   grid-column: 15/16;
   background-color: #4376e0;
 }
+
+/* -------------------------------- */
+
+[class*="capacity-lead-edj"] {
+  grid-row: 9/10;
+}
+
+[class*="capacity-discussion-edj"] {
+  grid-row: 10/11;
+}
+
+[class*="capacity-updated-edj"] {
+  grid-row: 11/12;
+}
+
+.capacity-lead-edj-1 {
+  grid-column: 2/16;
+}
+
+.capacity-lead-edj-2 {
+  grid-column: 16/20;
+  border: 1px dotted black;
+  background-color: red;
+}
+
+.capacity-lead-edj-3 {
+  grid-column: 20/-1;
+}
+
+.capacity-discussion-edj-2 {
+  grid-column: 2/10;
+}
+
+.capacity-discussion-edj-3 {
+  grid-column: 16/-1;
+}
+
+.capacity-discussion-edj-4 {
+  grid-column: 2/16;
+}
+
+.capacity-discussion-edj-5 {
+  grid-column: 20/-1;
+}
+
+.capacity-updated-edj-1 {
+  grid-column: 2/14;
+}
+
+.capacity-updated-edj-2 {
+  grid-column: 14/15;
+  border: 1px dotted black;
+  background-color: red
+}
+
+.capacity-updated-edj-3 {
+  grid-column: 15/-1;
+}
+/* -------------------------------- */
 
 .status {
   margin-left: 20px;
